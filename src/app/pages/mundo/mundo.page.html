@@ -1,0 +1,30 @@
+<app-header titulo="Datos Globales"></app-header>
+
+<ion-content class="ion-text-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="warning"><h1>CASOS CONFIRMADOS</h1></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{datosMundiales?.cases | number}}</h1>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="danger"><h1>MUERTOS</h1></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{datosMundiales?.deaths | number}}</h1>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success"><h1>RECUPERADOS</h1></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1 color="light">{{datosMundiales?.recovered | number}}</h1>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

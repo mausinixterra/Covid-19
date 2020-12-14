@@ -1,0 +1,23 @@
+  
+<app-header translucent="true" titulo="Casos Por País"></app-header>
+
+<ion-content >
+
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="searchCountry" autocomplete="off" placeholder="Buscar"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-list *ngFor="let country of countries | filter:searchCountry">
+    <ion-item>
+      <ion-label>
+        <h1>{{country.country}}</h1>
+        <p>
+          Casos: {{country.cases | number}} | Hoy: {{country.todayCases | number}} | Activos: {{country.active | number}}<br>
+          Muertos: {{country.deaths | number}} | Hoy: {{country.todayDeaths | number}}<br>
+          Recuperados: {{country.recovered | number}} | Criticos: {{country.critical | number}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

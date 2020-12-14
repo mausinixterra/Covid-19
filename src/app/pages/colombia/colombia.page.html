@@ -1,0 +1,58 @@
+<app-header titulo="Casos en Colombia"></app-header>
+
+<ion-content class="ion-text-center">
+
+  <ion-card>
+
+    <ion-item color="warning">
+      <ion-icon color="light" slot="start" name="checkmark-done-outline"></ion-icon>
+      <ion-label><h1>Casos confirmados</h1></ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <h1>Total: {{colombia?.cases | number}} | Hoy: {{colombia?.todayCases | number}}</h1>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item color="success">
+      <ion-icon color="light" slot="start" name="medkit-outline"></ion-icon>
+      <ion-label><h1>Casos</h1></ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <h1>Activos: {{colombia?.active | number}}<br>Recuperados: {{colombia?.recovered | number}}</h1>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item color="danger">
+      <ion-icon color="light" slot="start" name="skull-outline"></ion-icon>
+      <ion-label><h1>Muertos</h1></ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <h1>Total: {{colombia?.deaths | number}} | Hoy: {{colombia?.todayDeaths | number}}</h1>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item color="primary">
+      <ion-icon color="light" slot="start" name="pulse-outline"></ion-icon>
+      <ion-label><h1>Estado</h1></ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <h1>Criticos: {{colombia?.critical | number}} | Tests: {{colombia?.totalTests | number}}</h1>
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>

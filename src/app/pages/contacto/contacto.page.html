@@ -1,0 +1,70 @@
+<app-header titulo="Telefonos de Contacto"></app-header>
+
+<ion-content padding>
+
+  <p class="center" >Lineas de atención al ciudadano</p>
+
+  <ion-card>
+
+    <ion-item color="primary">
+      <ion-icon color="light" slot="start" name="navigate-outline"></ion-icon>
+      <ion-label>Bogotá y Cundinamarca</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Secretaría Distrital de Salud de Bogotá - 123</p>
+      <p>Cundinamarca - 123</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item color="success">
+      <ion-icon color="light" slot="start" name="navigate-outline"></ion-icon>
+      <ion-label>Valle del cauca</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Departamento - 620 68 19</p>
+      <p>Línea Exclusiva Cali - 486 55 55 Opción 7</p>
+      <p>Solo WhatsApp - 316 536 65 96</p>
+      <p>Buenaventura - 317 287 02 73</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item color="tertiary">
+      <ion-icon color="light" slot="start" name="navigate-outline"></ion-icon>
+      <ion-label>Antioquia</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Departamento - 300 305 02 95</p>
+      <p>Departamento - # 774</p>
+      <p>Medellín - 123</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <p class="center" >Listado completo de contactos</p>
+
+  <!-- ion-row + ion-col -->
+  <ion-row class="top-20">
+      <ion-col>
+          <ion-button expand="block" color="primary" fill="outline"  (click)="abrirEPS()">
+            EPS
+          </ion-button>
+      </ion-col>
+      <ion-col>
+          <ion-button expand="block" color="primary" fill="outline" (click)="abrirSecretarias()">
+            Secretarías de Salud
+          </ion-button>
+          
+      </ion-col>
+  </ion-row>
+
+
+</ion-content>

@@ -1,0 +1,44 @@
+<app-header titulo="Verificar Cédula"></app-header>
+
+<ion-content class="ion-padding">
+
+	<p class="center">Valida si estas habilitado para salir de tu casa el dia de hoy {{ fechaCompleta }}, verificando tu número de cédula.</p>
+	
+
+	<ion-list class="line-input"> 
+		<ion-item> 
+			<ion-label>No. de cédula</ion-label> 
+			<ion-input class="ion-text-right" type="text" maxlength="11" [(ngModel)]="identificacion"></ion-input> 
+			<ion-button  class="item-right" slot="end" expand="block" fill="clear" (click)="sendPostRequest()"><ion-icon size="large" name="arrow-forward-outline"></ion-icon></ion-button>
+		</ion-item> 
+	</ion-list>
+	 
+	<br>
+
+
+	<ion-item>
+		<ion-label>
+			<ion-text *ngIf="permitido == 1" color="permitido">
+				<h2 color="permitido" class="ion-text-capitalize center">{{ nombre }}</h2>
+				<ion-icon class="center" color="permitido" name="checkmark-circle-outline" style="font-size: 280px"></ion-icon>
+				<p color="permitido" class="center">Tiene permitido salir el dia de hoy.</p>
+				<p color="permitido" class="center">{{digitosPermitidos}}</p>
+			</ion-text>
+			<ion-text *ngIf="permitido == 0" color="prohibido">
+				<h2 color="prohibido" class="ion-text-capitalize center">{{ nombre }}</h2>
+				<ion-icon class="center" color="prohibido" name="close-circle-outline" style="font-size: 280px"></ion-icon>
+				<p color="prohibido" class="center">No tiene permitido salir el dia de hoy.</p>
+				<p color="prohibido" class="center">{{digitosPermitidos}}</p>
+			</ion-text>
+			<ion-text *ngIf="permitido != 0 && permitido != 1" color="prohibido">
+				<ion-skeleton-text animated  style="width: 300px; height: 30px"></ion-skeleton-text>
+				<ion-skeleton-text animated  style="width: 300px; height: 280px"></ion-skeleton-text>
+				<ion-skeleton-text animated  width="80%"></ion-skeleton-text>
+				<ion-skeleton-text animated  width="75%"></ion-skeleton-text>
+			</ion-text>
+		</ion-label>
+	  </ion-item> 
+
+
+   
+  </ion-content>

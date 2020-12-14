@@ -1,0 +1,85 @@
+<app-header titulo="¿Qué es?"></app-header>
+
+
+<ion-content>
+
+  <ion-card>
+          
+    <ion-img src="../../../assets/img/covid-19.jpg"></ion-img>
+    <ion-card-header>
+      <ion-item>
+        <ion-card-title>¿Qué es la COVID-19?</ion-card-title>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto el nuevo virus como la enfermedad eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-card-title >¿Qué es un coronavirus?</ion-card-title>
+        <div class="verMas">
+          <ion-button fill="clear"
+          (click)="abrirModal()">
+            <ion-icon color="primary" slot="icon-only" 
+                      name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="../../../assets/img/coronavirus.jpg"></ion-img>
+    <ion-card-content>
+      <p>
+        Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-card-title >¿Cuáles son los síntomas?</ion-card-title>
+        <div class="verMas">
+          <ion-button fill="clear"
+          (click)="abrirModal2()">
+            <ion-icon color="primary" slot="icon-only" 
+                      name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="../../../assets/img/sintomas.jpg"></ion-img>
+    <ion-card-content>
+      <p>
+        Los síntomas más comunes de la COVID-19 son fiebre, cansancio y tos seca. Algunos pacientes pueden presentar dolores, congestión nasal, rinorrea, dolor de garganta o diarrea.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-card-title >¿Qué puedo hacer para protegerme?</ion-card-title>
+        <div class="verMas">
+          <ion-button fill="clear"
+          (click)="abrirCuidados()">
+            <ion-icon color="primary" slot="icon-only" 
+                      name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="../../../assets/img/Cuidados.jpg"></ion-img>
+    <ion-card-content>
+      <p>
+        Manténgase al día de la información más reciente sobre el brote de COVID-19, a la que puede acceder en el sitio web de la OMS y a través de las autoridades de salud pública pertinentes a nivel nacional y local. 
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  </ion-content>
+  

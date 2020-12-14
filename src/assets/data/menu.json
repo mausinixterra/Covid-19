@@ -1,0 +1,58 @@
+[
+    {
+      "icon": "home-outline",
+      "name": "Inicio",
+      "redirectTo": "/inicio"
+    },
+    {
+      "icon": "help-outline",
+      "name": "¿Qué es?",
+      "redirectTo": "/quees"
+    },
+    {
+      "icon": "medkit-outline",
+      "name": "Cuidados",
+      "redirectTo": "/cuidados"
+    },
+    {
+      "icon": "globe-outline",
+      "name": "Casos Globales",
+      "redirectTo": "/mundo"
+    },
+    {
+      "icon": "locate-outline",
+      "name": "Casos Por País",
+      "redirectTo": "/paises"
+    },
+    {
+      "icon": "location-outline",
+      "name": "Casos Colombia",
+      "redirectTo": "/colombia"
+    },
+    {
+      "icon": "newspaper-outline",
+      "name": "Noticias",
+      "redirectTo": "/tabs"
+    },
+    {
+      "icon": "call-outline",
+      "name": "Telefonos de Contacto",
+      "redirectTo": "/contacto"
+    },
+    {
+      "icon": "walk-outline",
+      "name": "Verificar pico y cédula",
+      "redirectTo": "/verificar"
+    },
+    {
+      "icon": "receipt-outline",
+      "name": "Autoevaluación",
+      "redirectTo": "/autoevaluacion"
+    },
+    {
+      "icon": "information-circle-outline",
+      "name": "Acerca de",
+      "redirectTo": "/acercade"
+    }
+  ]
+  

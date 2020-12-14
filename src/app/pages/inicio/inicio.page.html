@@ -1,0 +1,54 @@
+  <app-header titulo="Inicio"></app-header>
+
+
+      
+
+      <ion-content padding>
+
+
+        <ion-card>
+          
+          <ion-img src="../../../assets/img/covid-19.jpg"></ion-img>
+          <ion-card-header>
+            <ion-item>
+              <ion-card-title>¿Qué es la COVID-19?</ion-card-title>
+              <ion-button (click)="abrirQuees()" fill="outline" slot="end">Ver</ion-button>
+            </ion-item>
+          </ion-card-header>
+    
+          <ion-card-content>
+            La COVID-19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto el nuevo virus como la enfermedad eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019.
+          </ion-card-content>
+    
+        </ion-card>
+    
+        <ion-card>
+          <ion-item color="primary">
+            <ion-icon name="reader-outline" class="white" slot="start"></ion-icon>
+            <ion-label text-center>Recomendaciones</ion-label>
+          </ion-item>
+
+          <ion-item (click)="abrirLimpieza()">
+            <ion-icon src="../../../assets/icon/quidditch-solid.svg" class="white" slot="start"></ion-icon>
+            <ion-label>Limpieza y desinfección en la Vivienda</ion-label>
+          </ion-item>
+        
+          <ion-item (click)="abrirPrevencion()">
+            <ion-icon src="../../../assets/icon/head-side-mask-solid.svg" class="white" slot="start"></ion-icon>
+            <ion-label>Medidas de prevención al salir de casa</ion-label>
+          </ion-item>
+        
+          <ion-item (click)="abrirVehiculo()">
+            <ion-icon src="../../../assets/icon/car-solid.svg" class="white" slot="start"></ion-icon>
+            <ion-label>Medidas para usuarios de vehiculos</ion-label>
+          </ion-item>
+        
+          <ion-item (click)="abrirDiscapacitados()">
+            <ion-icon  src="../../../assets/icon/accessible-icon-brands.svg" class="white" slot="start"></ion-icon>
+            <ion-label>Medidas para personas con discapacidad</ion-label>
+          </ion-item>
+        </ion-card>
+    
+    </ion-content>
+    
+      
